@@ -1,0 +1,170 @@
+.texto {
+    text-align: center;
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.alinhacentro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 300px;
+    margin-top: -130px;
+    /*set to a negative number 1/2 of your height*/
+    margin-left: -210px;
+    /*set to a negative number 1/2 of your width*/
+    text-align: center;
+    font-size: 45px;
+    color: #FFFFFF;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.botao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 200px;
+    margin-top: 110px;
+    /*set to a negative number 1/2 of your height*/
+    margin-left: -210px;
+    /*set to a negative number 1/2 of your width*/
+    text-align: center;
+}
+
+.social {
+    position: absolute;
+    top: 75%;
+    left: 74.5%;
+    width: 75px;
+    height: 75px;
+    margin-top: 100px;
+    /*set to a negative number 1/2 of your height*/
+    margin-left: 290px;
+    /*set to a negative number 1/2 of your width*/
+    text-align: center;
+}
+
+.social2 {
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    width: 75px;
+    height: 70px;
+    margin-top: 100px;
+    /*set to a negative number 1/2 of your height*/
+    margin-left: 280px;
+    /*set to a negative number 1/2 of your width*/
+    text-align: center;
+}
+
+.social3 {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    width: 75px;
+    height: 70px;
+    margin-top: 100px;
+    /*set to a negative number 1/2 of your height*/
+    margin-left: 280px;
+    /*set to a negative number 1/2 of your width*/
+    text-align: center;
+}
+
+.social4 {
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    width: 75px;
+    height: 70px;
+    margin-top: 100px;
+    /*set to a negative number 1/2 of your height*/
+    margin-left: 280px;
+    /*set to a negative number 1/2 of your width*/
+    text-align: center;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Set a specific color for each brand */
+
+
+/* Facebook */
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #f40083;
+    color: white;
+}
+
+.fa-whatsapp {
+    background: #a4c639;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0a51a1;
+    color: white;
+}
+
+.myButton {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3dc21b;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3dc21b;
+    box-shadow: inset 0px 1px 0px 0px #3dc21b;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+    background: -moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: -webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: -o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: -ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a', GradientType=0);
+    background-color: #44c767;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.myButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+    background: -moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+    background: -webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+    background: -o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+    background: -ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767', GradientType=0);
+    background-color: #5cbf2a;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
