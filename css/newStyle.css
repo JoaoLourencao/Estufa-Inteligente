@@ -256,7 +256,7 @@ canvas#myChart {
                0px 6px 0px -3px rgba(0,0,0,.1), 
                0px 8px 0px -4px rgba(0,0,0,.05);
     transition: box-shadow .3s ease-out;
-    transition: 0.7s;
+    transition: 0.9s;
     border-radius: 10px;
 }
 #cardTemp:hover{
@@ -273,17 +273,20 @@ canvas#myChart {
     text-align: left;
     font-size: 18px;
     margin-top: 2vh;
+    margin-bottom: 0vh;
 }
 
 .descCards{
     text-align: center;
-    font-size: 60px;
-    margin-top: -2vh;
+    font-size: 80px;
+    margin-top: -1vh;
+    margin-bottom: 0vh;
 }
 
 .desc2Cards{
     text-align: center;
     font-size: 13px;
-    margin-top: 2vh;
+    margin-top: 0vh;
     font-style: italic;
+    margin-bottom: 0vh;
 }
