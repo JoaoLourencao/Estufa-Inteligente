@@ -1,6 +1,6 @@
 :root {
     font-size: 16px;
-    font-family: 'Open Sans';
+    font-family: 'Gilroy Light'!important;
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
@@ -13,6 +13,7 @@
     background-color: white;
     margin: 0;
     padding: 0;
+    font-family: 'Gilroy Light'!important;
   }
   
   body::-webkit-scrollbar {
@@ -79,6 +80,8 @@
   .link-text {
     display: none;
     margin-left: 1rem;
+    font-family: 'Gilroy SemiBold';
+    text-transform: uppercase;
   }
   
   .nav-link svg {
@@ -230,22 +233,16 @@
   }
 
 .titleHome{
-    font-family: 'Open Sans';
     font-size: 33px;
     color: #848484;
     margin-bottom: 6vh;
+    font-family: 'Gilroy SemiBold';
 }
 
 .titleHome:hover{
     color: #0aa000;
 }
 
-canvas#myChart {
-    height: 70vh!important;
-    display: block;
-    width: 40vw!important;
-    margin-left: 33vh;
-}
 
 .colOrientation{
     text-align: center;
@@ -256,12 +253,12 @@ canvas#myChart {
                0px 6px 0px -3px rgba(0,0,0,.1), 
                0px 8px 0px -4px rgba(0,0,0,.05);
     transition: box-shadow .3s ease-out;
-    transition: 0.9s;
+    transition: 0.7s;
     border-radius: 10px;
 }
 #cardTemp:hover{
     background: #580000;
-    color: white;
+    color: white !important;
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,.9) inset,
                 0px 4px 0px -2px rgba(0,6,0,.2),
                 0px 8px 0px -4px rgba(0,0,0,.15),
@@ -274,14 +271,21 @@ canvas#myChart {
     font-size: 18px;
     margin-top: 2vh;
     margin-bottom: 0vh;
+    color: #848484;
+    transition: 0.7s;
+
 }
 
 .descCards{
     text-align: center;
     font-size: 80px;
-    margin-top: -1vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
+    color:#580000;
+    font-family: 'Gilroy Medium';
+    transition: 0.7s;
 }
+
 
 .desc2Cards{
     text-align: center;
@@ -289,4 +293,70 @@ canvas#myChart {
     margin-top: 0vh;
     font-style: italic;
     margin-bottom: 0vh;
+    color: #848484;
+    transition: 0.7s;
+
+}
+
+#cardTemp:hover{
+  background: #580000;
+  color: white !important;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,.9) inset,
+              0px 4px 0px -2px rgba(0,6,0,.2),
+              0px 8px 0px -4px rgba(0,0,0,.15),
+              0px 12px 0px -6px rgba(0,0,0,.1),
+              0px 16px 0px -8px rgba(0,0,0,.05);
+}
+
+#cardTemp:hover p{
+  color: white;
+}
+
+
+#cardUmi:hover{
+  background: #000b58;
+  color: white !important;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,.9) inset,
+              0px 4px 0px -2px rgba(0,6,0,.2),
+              0px 8px 0px -4px rgba(0,0,0,.15),
+              0px 12px 0px -6px rgba(0,0,0,.1),
+              0px 16px 0px -8px rgba(0,0,0,.05);
+}
+
+#cardUmi:hover p{
+  color: white;
+}
+
+.descCardUmi{
+  text-align: center;
+  font-size: 80px;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  color:#000b58;
+  font-family: 'Gilroy Medium';
+  transition: 0.7s;
+}
+
+#cardPress:hover{
+  background: #005817;
+  color: white !important;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,.9) inset,
+              0px 4px 0px -2px rgba(0,6,0,.2),
+              0px 8px 0px -4px rgba(0,0,0,.15),
+              0px 12px 0px -6px rgba(0,0,0,.1),
+              0px 16px 0px -8px rgba(0,0,0,.05);
+}
+
+#cardPress:hover p{
+  color: white;
+}
+
+.descCardPress{
+  text-align: center;
+  font-size: 80px;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  color:#005817;
+  font-family: 'Gilroy Medium';
+  transition: 0.7s;
 }
