@@ -530,3 +530,11 @@
   background-color: #28a745!important;
   border-color: #28a745!important;
 }
+
+#loader{
+  text-align: center;
+}
+
+.modal-content{
+  border-radius: 10px!important;
+}

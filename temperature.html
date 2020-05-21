@@ -87,8 +87,16 @@
             <div class="modal-dialog modal-md">
               <div class="modal-content">
                 <div class="modal-body"style="font-size: 20px;font-family: 'Gilroy Light';font-weight: bold;">
-                  <p>Você realmente deseja reduzir a temperatura?</p>
-                  <p>Obs. Sistema irá habilitar a função de aguar o solo.</p>
+                  <div class="row">
+                    <div class="col-md-12" id="confirmQuestion">
+                      <p>Você realmente deseja reduzir a temperatura?</p>
+                      <p>Obs. Sistema irá habilitar o resfriamento das estufa.</p>
+                    </div>
+                    <div id="loader" class="col-md-12" style="display: none;">
+                      <img src="../Estufa-Inteligente/image/EasyDopeyLeafbird-max-1mb.gif" alt="snow gif">
+                      <p>Reduzindo temperatura...</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" style="font-family: 'Gilroy SemiBold';" id="modal-btn-no">Não</button>
@@ -295,10 +303,27 @@
     </nav>
 
     <script>
+      $('#modal-btn-yes').on("click", function(){
+          $("#confirmQuestion").hide(); 
+          $(".modal-footer").hide();
+          
+          $("#loader").show();
+          setTimeout(
+          function() 
+          {
+            $("#confirmModal").modal('hide');
+          }, 5000);
+        });
+
       var modalConfirm = function(callback){
+
   
         $("#btnConfirmModal").on("click", function(){
           $("#confirmModal").modal('show');
+          $("#loader").hide();
+          $("#confirmQuestion").show(); 
+          $(".modal-footer").show();
+          
         });
 
         $("#modal-btn-no").on("click", function(){
@@ -308,7 +333,6 @@
         
         $("#modal-btn-yes").on("click", function(){
           callback(true);
-          $("#confirmModal").modal('hide');
         });
       };
 
