@@ -284,18 +284,19 @@
           type: 'spline'
         },
         title: {
-          text: 'Monthly Average Temperature'
+          text: 'Gráfico de temperaturas'
         },
+        colors: ['red', 'grey'],
         subtitle: {
-          text: 'Source: WorldClimate.com'
+          text: 'Ontem/Hoje'
         },
         xAxis: {
-          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+          categories: ['06:00', '07:00', '08:00', '09:00', '10:00', '11:00',
+            '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00']
         },
         yAxis: {
           title: {
-            text: 'Temperature'
+            text: 'Temperatura'
           },
           labels: {
             formatter: function () {
@@ -317,28 +318,28 @@
           }
         },
         series: [{
-          name: 'Tokyo',
+          name: 'Hoje',
           marker: {
-            symbol: 'square'
+            symbol: 'circle'
           },
           data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
             y: 26.5,
             marker: {
               symbol: 'url(https://www.highcharts.com/samples/graphics/sun.png)'
             }
-          }, 23.3, 18.3, 13.9, 9.6]
+          }, 23.3, 18.3, 13.9, 9.6, 9.5]
 
         }, {
-          name: 'London',
+          name: 'Ontem',
           marker: {
             symbol: 'diamond'
           },
-          data: [{
-            y: 3.9,
+          data: [6.0, 6.9, 7.5, 10.5, 12.2, 15.5, 18.2, {
+            y: 20.2,
             marker: {
-              symbol: 'url(https://www.highcharts.com/samples/graphics/snow.png)'
+              symbol: 'url(https://www.highcharts.com/samples/graphics/sun.png)'
             }
-          }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+          }, 17, 15.3, 10.9, 8.6, 6]
         }]
       });
     </script>
