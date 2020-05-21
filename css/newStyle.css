@@ -235,7 +235,7 @@
 .titleHome{
     font-size: 33px;
     color: #848484;
-    margin-bottom: 6vh;
+    margin-bottom: 1vh;
     font-family: 'Gilroy SemiBold';
 }
 
@@ -256,7 +256,7 @@
     transition: 0.7s;
     border-radius: 10px;
 }
-#cardTemp:hover{
+.cardTemp:hover{
     background: #580000;
     color: white !important;
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,.9) inset,
@@ -298,7 +298,7 @@
 
 }
 
-#cardTemp:hover{
+.cardTemp:hover{
   background: #580000;
   color: white !important;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,.9) inset,
@@ -308,12 +308,12 @@
               0px 16px 0px -8px rgba(0,0,0,.05);
 }
 
-#cardTemp:hover p{
+.cardTemp:hover p{
   color: white;
 }
 
 
-#cardUmi:hover{
+.cardUmi:hover{
   background: #000b58;
   color: white !important;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,.9) inset,
@@ -323,7 +323,7 @@
               0px 16px 0px -8px rgba(0,0,0,.05);
 }
 
-#cardUmi:hover p{
+.cardUmi:hover p{
   color: white;
 }
 
@@ -337,7 +337,7 @@
   transition: 0.7s;
 }
 
-#cardPress:hover{
+.cardPress:hover{
   background: #005817;
   color: white !important;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,.9) inset,
@@ -347,7 +347,7 @@
               0px 16px 0px -8px rgba(0,0,0,.05);
 }
 
-#cardPress:hover p{
+.cardPress:hover p{
   color: white;
 }
 
@@ -358,5 +358,14 @@
   margin-bottom: 0vh;
   color:#005817;
   font-family: 'Gilroy Medium';
+  transition: 0.7s;
+}
+
+.titleRecommended{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 2vh;
+  margin-bottom: 0vh;
+  color: #848484;
   transition: 0.7s;
 }
