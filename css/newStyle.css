@@ -469,3 +469,27 @@
     transition: 0.7s;
     border-radius: 10px;
 }
+
+.colOrientationChart{
+  text-align: center;
+  background: white;
+  box-shadow:0px 0px 0px 0px rgba(0,0,0,.5) inset,
+             0px 0px 10px -1px rgba(0,0,0,.2), 
+             0px 4px 0px -2px rgba(0,0,0,.15), 
+             0px 6px 0px -3px rgba(0,0,0,.1), 
+             0px 8px 0px -4px rgba(0,0,0,.05);
+  transition: box-shadow .3s ease-out;
+  transition: 0.7s;
+  border-radius: 10px;
+  margin-left: 7vh;
+  margin-top: 5vh;
+}
+
+.colOrientationChart:hover{
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,.9) inset,
+              0px 4px 0px -2px rgba(0,6,0,.2),
+              0px 8px 0px -4px rgba(0,0,0,.15),
+              0px 12px 0px -6px rgba(0,0,0,.1),
+              0px 16px 0px -8px rgba(0,0,0,.05);
+}
+
