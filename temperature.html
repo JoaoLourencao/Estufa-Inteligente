@@ -80,9 +80,23 @@
               </figure>
             </div>
           </div>
-          <a class="animate__animated animate__bounce animate__slow btnResfriar" href="">
-            <p>REDUZIR TEMPERATURA</p>
-          </a>
+          <button id="btnConfirmModal" class="animate__animated animate__pulse animate__slow btnResfriar">
+            REDUZIR TEMPERATURA
+          </button>
+          <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="confirmModal">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-body"style="font-size: 20px;font-family: 'Gilroy Light';font-weight: bold;">
+                  <p>Você realmente deseja reduzir a temperatura?</p>
+                  <p>Obs. Sistema irá habilitar a função de aguar o solo.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" style="font-family: 'Gilroy SemiBold';" id="modal-btn-no">Não</button>
+                  <button type="button" class="btn btn-primary" style="font-family: 'Gilroy SemiBold';" id="modal-btn-yes">Sim</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
     </main>
     <nav class="navbar">
@@ -281,6 +295,33 @@
     </nav>
 
     <script>
+      var modalConfirm = function(callback){
+  
+        $("#btnConfirmModal").on("click", function(){
+          $("#confirmModal").modal('show');
+        });
+
+        $("#modal-btn-no").on("click", function(){
+          callback(false);
+          $("#confirmModal").modal('hide');
+        });
+        
+        $("#modal-btn-yes").on("click", function(){
+          callback(true);
+          $("#confirmModal").modal('hide');
+        });
+      };
+
+      modalConfirm(function(confirm){
+        if(confirm){
+          //Acciones si el usuario confirma
+          $("#result").html("CONFIRMADO");
+        }else{
+          //Acciones si el usuario no confirma
+          $("#result").html("NO CONFIRMADO");
+        }
+      });
+
       Highcharts.chart('container', {
         chart: {
           type: 'spline'
