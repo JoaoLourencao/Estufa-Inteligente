@@ -31,22 +31,22 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12" style="text-align: left;">
-              <p class="animate__animated animate__fadeInLeft titleHome">Temperatura</span></p>
+              <p class="animate__animated animate__fadeInLeft titleHome">Umidade</span></p>
             </div>
-            <div class="animate__animated animate__jackInTheBox cardTemp col-md-3 colOrientation" style="margin-left: 7vh;">
+            <div class="animate__animated animate__jackInTheBox cardUmi col-md-3 colOrientation" style="margin-left: 7vh;">
               <div class="row">
                 <div class="col-md-10">
-                  <p class="titleCards">Temperatura atual</p>
+                  <p class="titleCards">Umidade atual</p>
                 </div>
                 <div class="col-md-2" style="margin-top: 22px;">
                   <div class="scroll-arrow"></div>
                   <div class="scroll-arrow"></div>
                 </div>
               </div>
-              <p class="descCards">25<span style="font-family: sans-serif;font-weight: lighter;">º</span><span style="font-size: 30px;">C</span></p>
+              <p class="descCardUmi">25<span style="font-family: sans-serif;font-weight: lighter;">º</span><span style="font-size: 30px;">C</span></p>
               <p class="desc2Cards">*Valor atualizado a cada 5 minutos</p>
             </div>
-            <div class="animate__animated animate__jackInTheBox cardTemp col-md-3 offset-md-1 colOrientation">
+            <div class="animate__animated animate__jackInTheBox cardUmi col-md-3 offset-md-1 colOrientation">
               <div class="row">
                 <div class="col-md-10">
                   <p class="titleCards">Máxima Hoje</p>
@@ -56,10 +56,10 @@
                   <div class="scroll-arrow"></div>
                 </div>
               </div>
-              <p class="descCards">26<span style="font-family: sans-serif;font-weight: lighter;">º</span><span style="font-size: 30px;">C</span></p>
+              <p class="descCardUmi">26<span style="font-family: sans-serif;font-weight: lighter;">º</span><span style="font-size: 30px;">C</span></p>
               <p class="desc2Cards">*Valor atualizado a cada 5 minutos</p>
             </div>
-            <div class="animate__animated animate__jackInTheBox cardTemp col-md-3 offset-md-1 colOrientation">
+            <div class="animate__animated animate__jackInTheBox cardUmi col-md-3 offset-md-1 colOrientation">
               <div class="row">
                 <div class="col-md-10">
                   <p class="titleCards">Máxima dia anterior</p>
@@ -69,7 +69,7 @@
                   <div class="scroll-arrow3"></div>
                 </div>
               </div>
-              <p class="descCards">20<span style="font-family: sans-serif;font-weight: lighter;">º</span><span style="font-size: 30px;">C</span></p>
+              <p class="descCardUmi">20<span style="font-family: sans-serif;font-weight: lighter;">º</span><span style="font-size: 30px;">C</span></p>
               <p class="desc2Cards">*Valor atualizado a cada 5 minutos</p>
             </div>
           </div>
@@ -80,8 +80,8 @@
               </figure>
             </div>
           </div>
-          <button id="btnConfirmModal" class="animate__animated animate__pulse animate__slow btnResfriar">
-            REDUZIR TEMPERATURA
+          <button id="btnConfirmModal" class="animate__animated animate__pulse animate__slow btnUmidecer">
+            AUMENTAR UMIDADE
           </button>
           <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="confirmModal">
             <div class="modal-dialog modal-md">
@@ -351,9 +351,9 @@
           type: 'spline'
         },
         title: {
-          text: 'Gráfico de temperaturas'
+          text: 'Gráfico de Umidade'
         },
-        colors: ['red', 'grey'],
+        colors: ['blue', 'grey'],
         subtitle: {
           text: 'Ontem/Hoje'
         },
@@ -363,7 +363,7 @@
         },
         yAxis: {
           title: {
-            text: 'Temperatura'
+            text: 'Umidade'
           },
           labels: {
             formatter: function () {
@@ -392,7 +392,7 @@
           data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
             y: 26.5,
             marker: {
-              symbol: 'url(https://www.highcharts.com/samples/graphics/sun.png)'
+              symbol: 'url(https://www.highcharts.com/samples/graphics/snow.png)'
             }
           }, 23.3, 18.3, 13.9, 9.6, 9.5]
 
@@ -404,7 +404,7 @@
           data: [6.0, 6.9, 7.5, 10.5, 12.2, 15.5, 18.2, {
             y: 20.2,
             marker: {
-              symbol: 'url(https://www.highcharts.com/samples/graphics/sun.png)'
+              symbol: 'url(https://www.highcharts.com/samples/graphics/snow.png)'
             }
           }, 17, 15.3, 10.9, 8.6, 6]
         }]
